@@ -9,8 +9,8 @@ import random
 def iterate_dir(source, dest, ratio, copy_xml):
     source = source.replace('\\', '/')
     dest = dest.replace('\\', '/')
-    train_dir = os.path.join(dest, '../train')
-    test_dir = os.path.join(dest, '../val')
+    train_dir = os.path.join(dest, '/train')
+    test_dir = os.path.join(dest, '/val')
 
     if not os.path.exists(train_dir):
         os.makedirs(train_dir)
